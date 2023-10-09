@@ -22,7 +22,7 @@ llm_prompt = ChatPromptTemplate(
         ),
         HumanMessagePromptTemplate.from_template("{message}")
     ]
-)
+) 
 
 if prompt := st.chat_input(placeholder="Ask anything."):
     st.chat_message("user").write(prompt)
